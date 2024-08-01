@@ -1,0 +1,14 @@
+/*Este es mi hoja de estilo box model*/
+main{
+padding: 8rem 2rem;
+border: 10px rgb(151, 2, 2) dotted;
+margin: 5rem;
+border-radius: 2rem;
+}
+
+
+img{
+
+    object-fit: cover; 
+    width: 35%;
+}
