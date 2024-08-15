@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Signika:wght@300..700&display=swap');
+@import url('https://unpkg.com/@uiw/reset.css/reset.css');
+
+h1{
+  font-family: "Signika", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  padding: 1rem;
+}
+header{
+    background-color: rgb(245, 101, 101);
+}
+main{
+    background-color: rgb(213, 127, 127);
+}
+aside{
+    background-color: rgba(255, 138, 138, 0.431);
+}
+footer{
+    background-color: rgb(121, 0, 0);
+}
+
+/* Diseño responsivo con media queries movil*/
+@media (max-width: 600px) {
+    /* body {
+      background: rgb(240, 214, 86);
+  } */
+
+  #container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    gap: 1rem;
+    }
+  }
+/* Diseño responsivo con media queries tablets para  arriba*/
+  @media (min-width: 600px) {
+    /* body {
+      background: rgb(234, 171, 77);
+    } */
+
+    #container {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        grid-template-rows: auto 1fr auto;
+        height: 100vh;
+        gap: 1rem;
+        grid-template-areas:
+        "cabeza cabeza cabeza"
+        "principal principal lado"
+        "pie pie pie"
+        ;
+    }
+    header{
+        grid-area: cabeza;
+    }
+    main{
+        grid-area: principal;
+    }
+    aside{
+        grid-area: lado;
+        /*grid-area: 1 / 2 / 3 / 4;  */
+    }
+    footer{
+        grid-area: pie;
+    }
+
+  }
