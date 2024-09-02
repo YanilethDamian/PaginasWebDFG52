@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGINA JS</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div id="container">
+<header class="borde head">
+  <nav><img src="img/logomujeres.png" alt="logo de la fundacion"> 
+
+    <a href="#">INICIO</a>
+    <a href="#">DONACIONES</a>
+    <a href="#">LUGAR</a>
+    <a href="#">PROYECTOS</a>
+
+</nav>
+</header>
+<main class="borde main">
+    <h1> <pre>Quienes Somos 
+Mision, Vision y Objetivo</h1></pre>
+    <p><b>MISION:</b> Generar mediante acciones como la asistencia social, legal, humana y comunitaria. Oportuna, eficiente y de calidad basada en los derechos humanos con una visión global y acciones locales en trabajo de campo logren un desarrollo autónomo sustentable y con equidad de género en las comunidades y sus familias.
+        <b>VISION:</b> Ser una fundación del más alto nivel de profesionalismo con la capacidad  
+        de articular las necesidades con los recursos disponibles.
+        <b>OBJETIVO: </b>Con estrategias creativas alianzas y trabajos en red para lograr nuestros objetivos crear comunidades sin violencia con equidad e igualdad de género más necesitadas puedan acceder a una justicia social más equitativa y mejorar los niveles de vida para lograr familias más integradas y libres de violencia.</p>
+<img src="img/imagenfundacion.png" alt="imagen de la fundacion">
+</main>
+    <aside class="borde lado">
+<p><pre>ALTO A LA 
+VIOLENCIA DE 
+GENERO
+APOYA A UNA 
+VICTIMA DE 
+VIOLENCIA</pre></p>
+    </aside>
+    <footer class="borde pie">
+        <p>CONTACTANOS</p>
+        <form  action="" method="get">
+            <label for="name">NOMBRE:</label>
+            <input type="text" name="fname">
+            <label for="name">APELLIDO:</label>
+            <input type="text" name="lname">
+            <label for="email">EMAIL:</label>
+            <input type="email" name="email">
+            <input type="submit" value="Suscribirme">
+        </form>
+    </footer>
+    </div>
+<script src="js/vivus.js"></script>
+<script>
+    new Vivus('my-div',{duration: 200, type: 'oneByOne', file: 'img/natsufirma.svg'},); 
+</script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+ScrollReveal().reveal('.head', { delay: 250, easing: 'ease-in'});
+ScrollReveal().reveal('.main', { delay: 500, scale: 0.80 });
+ScrollReveal().reveal('.lado', { delay: 800, rotate: { x: 20, z: 20},});
+ScrollReveal().reveal('.pie', { delay: 1000, distance: '150%', origin: 'bottom' });
+</script>
+
+</body>
+</html>
